@@ -23,6 +23,7 @@ func RunTelegram(token string) {
 	{
 		b.Handle("/start", commands.Start)
 		b.Handle("/replace", commands.Replace)
+		b.Handle("/getip", commands.Getip)
 	}
 
 	b.Start()
